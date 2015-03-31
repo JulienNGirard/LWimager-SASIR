@@ -726,22 +726,7 @@ int main (Int argc, char** argv)
                          Vector<String>(1, restoName),  // restored
                          Vector<String>(1, residName));  // residual
         } 
-		
-		/* else {
-		cout << "SWITCHING TO DEFAULT CLEAN" << endl;
-          imager.clean(operation,                     // algorithm,
-                       niter,                         // niter
-                       gain,                          // gain
-                       threshold,                     // threshold
-                       False,                         // displayProgress
-                       Vector<String>(1, modelName),  // model
-                       Vector<Bool>(1, fixed),        // fixed
-                       "",                            // complist
-                       Vector<String>(1, maskName),   // mask
-                       Vector<String>(1, restoName),  // restored
-                       Vector<String>(1, residName)); // residual
-        }
-*/
+
 
         // Convert result to fits if needed.
         if (! fitsName.empty()) {
