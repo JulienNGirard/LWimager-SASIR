@@ -701,20 +701,22 @@ int main (Int argc, char** argv)
                        Vector<String>(1, restoName),  // restored
                        Vector<String>(1, residName)); // residual
         }
-/*
+
 	  if ( operation == "compsens" ) {
+	  cout << operation << endl;
+	  cout << "IN CS" << endl;
                  imager.compsens(operation,                     // algorithm,
                          niter,                         // niter
                          gain,                          // gain
                          minimization, transform,
-			 ksigma, // number of sigma for soft thresholding in each scale
-			 Nbscales, // number of scale to use
-			 Positivity, // positivity constraint on the reconstruction
-			 no_coarse, // do not soft threshold the coarse scale
-			 TolVar, // stopping criterion based on variation between to iterations
-			 verbose, // enable verbosity
+			 			 ksigma, // number of sigma for soft thresholding in each scale
+						 Nbscales, // number of scale to use
+			 			 Positivity, // positivity constraint on the reconstruction
+			 			 no_coarse, // do not soft threshold the coarse scale
+			 			 TolVar, // stopping criterion based on variation between to iterations
+			 			 verbose, // enable verbosity
                          do_cs_convolve,              	// Convolve or scale CS with the beam
-			 AllOutput,			// save image at each iteration with scales
+			 			 AllOutput,			// save image at each iteration with scales
                          threshold,                     // threshold
                          False,               		// displayProgress
                          Vector<String>(1, modelName),  // model
@@ -723,7 +725,9 @@ int main (Int argc, char** argv)
                          Vector<String>(1, maskName),   // mask
                          Vector<String>(1, restoName),  // restored
                          Vector<String>(1, residName));  // residual
-        } else {
+        } 
+		
+		/* else {
 		cout << "SWITCHING TO DEFAULT CLEAN" << endl;
           imager.clean(operation,                     // algorithm,
                        niter,                         // niter
