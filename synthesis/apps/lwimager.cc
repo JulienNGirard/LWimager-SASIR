@@ -701,7 +701,7 @@ int main (Int argc, char** argv)
                        Vector<String>(1, restoName),  // restored
                        Vector<String>(1, residName)); // residual
         }
-
+/*
 	  if ( operation == "compsens" ) {
                  imager.compsens(operation,                     // algorithm,
                          niter,                         // niter
@@ -737,7 +737,7 @@ int main (Int argc, char** argv)
                        Vector<String>(1, restoName),  // restored
                        Vector<String>(1, residName)); // residual
         }
-
+*/
 
         // Convert result to fits if needed.
         if (! fitsName.empty()) {
