@@ -703,8 +703,6 @@ int main (Int argc, char** argv)
         }
 
 	  if ( operation == "compsens" ) {
-	  cout << operation << endl;
-	  cout << "IN CS" << endl;
                  imager.compsens(operation,                     // algorithm,
                          niter,                         // niter
                          gain,                          // gain
